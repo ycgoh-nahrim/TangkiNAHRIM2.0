@@ -16,9 +16,12 @@
   <li><strong>What is this?</strong>
     <ul>
       <li>This is an app to let you calculate and choose the optimal tank size for your rainwater harvesting system.</li>
-	  <li>This app will not design your entire rainwater harvesting system. You need a contractor for that.</li>
+	  <li>This app will not design your entire rainwater harvesting system. You need a contractor for that. Your contractor will design the system based on the tank size you choose from this app.</li>
     </ul>
   </li>
+  <strong>Watch the app demonstration video</strong>
+  <center><iframe width="560" height="315" src="https://www.youtube.com/embed/J6slcZaXEzA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+  <br>
   <li><strong>What size should I choose?</strong>
     <ul>
       <li>Depends on the space you can give for the tank in your property, or the cost of the tank.</li>
@@ -28,13 +31,13 @@
   </li>
   <li><strong>Why do I need to choose rainfall data?</strong>
     <ul>
-      <li>You need rainfall data to determine how much water you can receive for your rainwater harvesting system. You will need to choose rainfall station which is closest to your property to be able to get more accurate calculation of the rainwater you can receive, since rainfall amount differ by location/region.</li>
-      <li>You can also load your own daily rainfall data in csv. The csv file must have 2 columns, with headers titled &lsquo;<strong>Date</strong>&rsquo; and &lsquo;<strong>Depth</strong>&rsquo; respectively. The &lsquo;Date&rsquo; must be in 28/1/2003 format, while the depth (daily rainfall value) is in mm. Please make sure your rainfall data is cleaned and <strong>complete</strong> for every year, as the calculation assumes complete years.</li>
+      <li>You need rainfall data to determine how much rainwater you can receive for your rainwater harvesting system. You will need to choose rainfall station which is closest to your property to be able to get more accurate calculation of the rainwater you can receive, since rainfall amount differ by location/region.</li>
+      <li>You can also load your own daily rainfall data in csv. The csv file must have 2 columns, with headers titled &lsquo;<strong>Date</strong>&rsquo; and &lsquo;<strong>Depth</strong>&rsquo; respectively. The &lsquo;Date&rsquo; must be in 28/1/2003 (dd/mm/yyyy) format, while the depth (daily rainfall value) is in mm. Please make sure your rainfall data is cleaned and <strong>complete</strong> for every year, as the calculation assumes complete data for each year.</li>
     </ul>
   </li>
   <li><strong>Why can&rsquo;t I find any rainfall station at my place?</strong>
     <ul>
-      <li>If you cannot find any rainfall station at your location, please zoom out and look for the nearest station. Some places may have DID rainfall stations but is excluded from this app due to problems with the rainfall data such as too many missing data or not enough data for at least 10 years.</li>
+      <li>If you cannot find any rainfall station at your location, please zoom out and look for the nearest station. Rainfall stations included in this app were selected from stations with data for at least 10 years.</li>
     </ul>
   </li>
   <li><strong>How to measure my roof area?</strong>
@@ -51,12 +54,12 @@
   <li><strong>What is "first flush"?</strong>
     <ul>
       <li>First flush means the amount of rainwater that should be flushed away when a rain event starts. This will be able to wash away some dirt from the roof to enable us to collect relatively cleaner water for our rainwater harvesting system.</li>
-      <li>The most common value used is 1 mm. However, you can also use other values.</li>
+      <li>The most common value used is 1 mm. However, you can also use other values. Total first flush volume equals to the selected value multiplied by roof area.</li>
     </ul>
   </li>
   <li><strong>What is "Potential amount of harvested rainwater to be used per day (litres)"?</strong>
     <ul>
-      <li>This is the amount of rainwater you plan to use for your toilet flushing, car washing, general cleaning etc from the rainwater harvesting system.</li>
+      <li>This is the amount of rainwater you plan to use for your toilet flushing, car washing, general cleaning etc from the rainwater harvesting system. In other words, the amount of rainwater for non-potable use.</li>
       <li>Note that it is daily amount, assuming that weekdays and weekends water demand are similar.</li>
     </ul>
   </li>
@@ -65,7 +68,12 @@
       <li>Water saving efficiency means the percentage of water demand that can be met by the rainwater harvesting system using the indicated tank sizes.</li>
       <li>Storage efficiency means the percentage of rainwater from your roof that is used in your rainwater harvesting system using the indicated tank sizes.</li>
       <li>Bear in mind that once the curve for water-saving efficiency gradually flattens, the increasing tank sizes will not increase the amount of water used in the rainwater harvesting system by much. Which means your optimal tank size is before the flattening of the curve.</li>
-      <li>If the storage efficiency is low, it means that a large percentage of the rainwater your roof can collect goes down the drain, literally. To increase the storage efficiency, you can increase the water demand (amount of rainwater to be used).</li>
+      <li>If the storage efficiency is low, it means that a large percentage of the rainwater your roof can collect goes down the drain, literally. To increase the storage efficiency, you can try any or combination of these methods:
+	  <ol style="list-style-type: decimal; padding-bottom: 0;">
+		<li style="margin-left:0.5em">Increase tank size to increase storage volume</li>
+		<li style="margin-left:0.5em; padding-bottom: 0;">Increase water demand (amount of rainwater to be used)</li>
+		</ol>
+	  </li>
     </ul>
   </li>
   <li><strong>What does Tank Volume Percentage Time chart mean?</strong>
