@@ -241,6 +241,7 @@ ui <- fluidPage(
              h4("Total Annual Rainfall"),
              #withSpinner(plotlyOutput("rainfall_annual_Plot")),
              plotlyOutput("rainfall_annual_Plot"),
+             p("Note: Gaps in graph indicate incomplete (missing) data.", align= "right"),
              h4("Monthly Rainfall"),
              #withSpinner(plotlyOutput("rainfall_mth_Plot")),
              plotlyOutput("rainfall_mth_Plot")
@@ -1546,7 +1547,7 @@ server <- function(input, output, session) {
                 startCol = 8, startRow = 1)
       writeData(wb, "Report", "Reference:",
                 startCol = 8, startRow = 3)
-      writeData(wb, "Report", "Goh, Y. C., & Ideris, M. (2021). Tangki NAHRIM 2.0: An R-based water",
+      writeData(wb, "Report", "Goh Yee Cai & Marini Ideris (2021). Tangki NAHRIM 2.0: An R-based water",
                 startCol = 8, startRow = 4)
       writeData(wb, "Report", "balance model for rainwater harvesting tank sizing application.",
                 startCol = 8, startRow = 5)
