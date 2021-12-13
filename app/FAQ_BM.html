@@ -15,8 +15,8 @@
   <ul>
   <li><strong>Apakah aplikasi ini?</strong>
     <ul>
-      <li>Aplikasi ini membolehkan anda memilih saiz tangki yang optimum untuk sistem penuaian air hujan (SPAH) anda.</li>
-	  <li>Aplikasi ini tidak dapat merekabentuk keseluruhan sistem penuaian air hujan. Anda boleh mengupah kontraktor untuk rekabentuk sistem berdasarkan pemilihan tangki yang dibuat melalui aplikasi ini serta kegunaan bukan minum / minum.</li>
+      <li>Aplikasi ini membolehkan anda memilih saiz tangki yang terbaik (optimum) untuk sistem penuaian air hujan (SPAH) anda (berdasarkan kedudukan anda).</li>
+	  <li>Aplikasi ini tidak dapat merekabentuk keseluruhan sistem penuaian air hujan. Anda boleh mengupah kontraktor untuk rekabentuk sistem berdasarkan pemilihan saiz tangki yang dibuat melalui aplikasi ini.</li>
     </ul>
   </li>
   <strong>Tonton video demo aplikasi</strong>
@@ -25,30 +25,31 @@
   <li><strong>Berapakah saiz yang harus saya pilih?</strong>
     <ul>
       <li>Bergantung pada ruang yang boleh digunakan di rumah anda, ataupun kos tangki.</li>
-      <li>Anda boleh memasukkan ukuran sekecil mungkin (minimum) dan ukuran terbesar mungkin (maksimum) dalam input.</li>
-      <li>Anda juga harus menentukan selang (interval) berapa saiz sehingga mencapai ukuran maksimum untuk melihat perbezaan antara saiz tangki.</li>
+      <li>Secara teori, anda boleh memasukkan ukuran sekecil mungkin (minimum) dan ukuran terbesar mungkin (maksimum) dalam input untuk membuat perbandingan.</li>
+      <li>Anda juga harus menentukan selang (interval) saiz tangki untuk melihat perbezaan keputusan pengiraan antara saiz.</li>
     </ul>
   </li>
   <li><strong>Mengapa saya perlu memilih data hujan?</strong>
     <ul>
       <li>Anda memerlukan data hujan untuk menentukan berapa banyak air hujan yang dapat anda terima untuk sistem penuaian air hujan anda. Anda perlu memilih stesen hujan yang paling dekat dengan rumah anda untuk mendapatkan pengiraan yang lebih tepat mengenai air hujan yang dapat anda terima. Ini kerana jumlah hujan berbeza mengikut kawasan.</li>
-	  <li>Anda juga boleh muatnaikkan data hujan harian anda sendiri dalam format csv. Fail csv mesti mempunyai 2 lajur (column), dengan tajuk bertajuk <strong>&lsquo;Date&rsquo;</strong> (tarikh) dan <strong>&lsquo;Depth&rsquo; (jumlah hujan)</strong> masing-masing. ‘Date’ mestilah dalam format 28/1/2003 (dd/mm/yyyy), sementara jumlah hujan adalah dalam mm. Pastikan data hujan anda sudah bersih dan <strong>lengkap</strong> untuk setiap tahun, kerana pengiraannya bergantung kepada anggapan data hujan lengkap.</li>
+	  <li>Anda juga boleh muatnaikkan data hujan harian anda sendiri dalam format csv. Fail csv mesti mempunyai 2 lajur (column), dengan tajuk <strong>&lsquo;Date&rsquo;</strong> (tarikh) dan <strong>&lsquo;Depth&rsquo; (jumlah hujan)</strong>. ‘Date’ mestilah dalam format 28/01/2003 (dd/mm/yyyy), sementara jumlah hujan adalah dalam mm. Pastikan tiada simbol (cth. ?, *, # ) di dalam csv tersebut. Pastikan data hujan anda sudah bersih dan <strong>lengkap</strong> untuk setiap tahun, kerana pengiraannya bergantung kepada anggapan data hujan lengkap. Tahun yang datanya tidak lengkap tidak akan diambil kira.</li>
     </ul>
   </li>
   <li><strong>Mengapa saya tidak dapat mencari stesen hujan di tempat saya?</strong>
     <ul>
-      <li>Sekiranya anda tidak dapat menemui stesen hujan di kawasan anda, silakan zoom keluar dan cari stesen terdekat. Stesen hujan yang terdapat dalam aplikasi ini telah dipilih daripada stesen yang lengkap serta jumlah data yang melebihi 10 tahun.</li>
+      <li>Sekiranya anda tidak dapat menemui stesen hujan di kawasan anda, silakan zoom keluar dan cari stesen terdekat. Stesen hujan yang terdapat dalam aplikasi ini telah dipilih untuk stesen yang mempunyai data tahunan lengkap melebihi 10 tahun.</li>
     </ul>
   </li>
   <li><strong>Bagaimana mengukur kawasan bumbung (roof area) saya?</strong>
     <ul>
-      <li>Kawasan bumbung anda adalah luas kawasan yang dapat mengumpulkan air hujan dan menyalurkannya ke tangki anda. Sekiranya anda tidak boleh mendapatkan ukuran sebenar, cuba cari rumah anda di Google Earth dan gunakan alat pengukuran. Sekiranya rumah anda tidak dapat dilihat di Google Earth, anda harus membuat ukuran sebenar.</li>
+      <li>Kawasan bumbung anda adalah luas kawasan yang dapat mengumpulkan air hujan dan menyalurkannya ke tangki anda. Sekiranya anda tidak boleh mendapatkan ukuran sebenar, cuba cari rumah anda di Google Earth dan gunakan alat pengukuran jarak di situ. Sekiranya rumah anda tidak dapat dilihat di Google Earth, anda harus membuat ukuran sebenar.</li>
     </ul>
   </li>
-  <li><strong>•	Apakah itu "pekali bumbung" (<i>roof coefficient</i>)?</strong>
+  <li><strong>Apakah itu "pekali bumbung" (<i>roof coefficient</i>)?</strong>
     <ul>
       <li>Pekali bumbung bergantung kepada jenis bahan bumbung. Ini bermaksud peratusan air hujan yang dapat dikumpulkan oleh bumbung, bergantung kepada jenis bahan.</li>
       <li>Sebagai rujukan, pekali bumbung untuk bahan yang paling biasa disenaraikan di bawah: 0.8 untuk bumbung konkrit, 0.9 untuk bumbung zink / logam, atau nilai lain kurang dari 1 (anda boleh memasukkan nilai bersesuaian yang lain).</li>
+	  <li>Untuk makluman kehilangan seperti sejatan dan kebocoran dianggap terlalu sedikit dan tidak diambil kira.</li>
     </ul>
   </li>
   <li><strong>Apakah itu <i>"first flush"</i>?</strong>
@@ -59,19 +60,20 @@
   </li>
   <li><strong>Apakah "Potensi jumlah air hujan yang dituai untuk digunakan setiap hari (liter)"?</strong>
     <ul>
-      <li>Ini adalah jumlah air hujan yang akan untuk digunakan untuk kegunaan bukan minum iaitu pembersihan tandas, mencuci kereta, pembersihan am dan lain-lain menggunakan air yang dituai.</li>
-      <li>Nilai ini adalah nilai penggunaan air harian, samada hari minggu atau hujung minggu.</li>
+      <li>Ini adalah jumlah air hujan dituai yang akan digunakan untuk contohnya pembersihan tandas, mencuci kereta, pembersihan am dan lain-lain.</li>
+      <li>Nilai ini adalah merupakan penggunaan air harian, yang dianggap sama pada hari biasa dan hujung minggu.</li>
     </ul>
   </li>
   <li><strong>Apakah maksud hasil pengiraan ini?</strong>
     <ul>
-      <li>Kecekapan penjimatan air (water saving efficiency) bermaksud peratusan permintaan air yang dapat dipenuhi oleh sistem penuaian air hujan menggunakan saiz tangki yang dipilih.</li>
-      <li>Kecekapan penyimpanan (storage efficiency) bermaksud peratusan air hujan daripada jumlah yang dikumpul oleh bumbung yang digunakan dalam sistem penuaian air hujan anda menggunakan saiz tangki yang dipilih.</li>
-      <li>Apabila lengkung kecekapan penjimatan air mulai landai, saiz tangki yang meningkat tidak lagi menambah dengan banyak penggunaan air hujan dalam sistem tersebut. Ini bermaksud saiz yang terbaik adalah sebelum lengkung graf tersebut menjadi landai.</li>
-      <li>o	Sekiranya kecekapan penyimpanan rendah, ini bermaksud bahawa sebilangan besar air hujan yang dapat dikumpulkan oleh bumbung tidak dapat disimpan dalam tangki dan mengalir keluar ke longkang. Untuk meningkatkan kecekapan penyimpanan, boleh cuba salah satu daripada ini atau kombinasi keduanya sekali:
+      <li>Kecekapan penjimatan air (<i>water-saving efficiency</i>) bermaksud peratusan permintaan air yang dapat dipenuhi oleh sistem penuaian air hujan.</li>
+      <li>Apabila lengkung kecekapan penjimatan air mulai landai, penggunaan air hujan tidak lagi bertambah dengan saiz tangki yang meningkat. Ini bermaksud saiz yang terbaik adalah sebelum lengkung graf tersebut menjadi landai.</li>
+      <li>Secara kebiasaannya, kecekapan penjimatan air paling minimum adalah 75% untuk sistem penuaian air hujan.</li>
+	  <li>Kecekapan penyimpanan (<i>storage efficiency</i>) bermaksud peratusan air hujan daripada jumlah yang dikumpul oleh bumbung yang digunakan dalam sistem penuaian air hujan.</li>
+      <li>Sekiranya nilai kecekapan penyimpanan rendah, ini bermaksud bahawa sebilangan besar air hujan yang dapat dikumpulkan oleh bumbung tidak dapat disimpan dalam tangki dan mengalir keluar ke longkang. Untuk meningkatkan kecekapan penyimpanan, cuba salah satu atau kedua-dua cara di bawah:
 	  <ol style="list-style-type: decimal; padding-bottom: 0;">
 		<li style="margin-left:0.5em">Tingkatkan saiz tangki bagi menambahkan isipadu penyimpanan air hujan</li>
-		<li style="margin-left:0.5em; padding-bottom: 0;">Meningkatkan permintaan air (jumlah air hujan yang akan digunakan oleh sistem)</li>
+		<li style="margin-left:0.5em; padding-bottom: 0;">Tingkatkan permintaan air (jumlah air hujan yang akan digunakan oleh sistem)</li>
 		</ol>
 	  </li>
     </ul>
@@ -80,7 +82,7 @@
     <ul>
       <li>Carta ini menunjukkan peratusan masa tangki berada pada isipadu tertentu.</li>
       <li>Isipadu tangki dibahagikan kepada 5 kelas. Paksi-Y ialah peratusan masa tangki berada pada kelas isipadu yang berbeza.</li>
-      <li>Cth. semakin tidak cekap saiz tangki, semakin lama tangki tersebut berada pada keadaan kosong (merah).</li>
+      <li>Cth. semakin kurang kecekapan tangki, semakin lama tangki tersebut berada pada paras kosong (merah).</li>
     </ul>
   </li>
 </ul>
@@ -89,5 +91,6 @@
 
 </body>
 </html>
+
 
 
