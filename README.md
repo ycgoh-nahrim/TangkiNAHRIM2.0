@@ -1,5 +1,5 @@
 # Tangki NAHRIM 2.0
-R script of Tangki NAHRIM 2.0
+R script for Tangki NAHRIM 2.0
   
   <ul>
   <li>Tangki NAHRIM is used for calculating optimal rainwater harvesting tank size in Malaysia.</li>
